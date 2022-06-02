@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google Advanced Search</title>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #70757a;
+        }
+
+        #upperRightLinks {
+            overflow: auto;
+        }
+
+        #links {
+            float: right;
+            margin: 15px;
+            font-size: 13px;
+        }
+
+        #links a {
+            padding: 8px;
+            color: black;
+        }
+
+        #links a:hover {
+            text-decoration: underline;
+        }
+
+        #google-logo {
+            float: left;
+
+        }
+
+        img {
+            width: 75px;
+            position: absolute;
+            left: 1.5%;
+            top: 3%;
+        }
+
+        h3 {
+            margin: 40px;
+        }
+
+        .main-container {
+            margin: 40px;
+            width: 80%;
+
+        }
+
+        form {
+            position: relative;
+        }
+
+        .search-area {
+            padding: 10px;
+            font-size: 12px;
+            display: flex;
+        }
+
+        .explanations p {
+            margin: 26px 0px;
+        }
+
+        #search-bar-container {
+            margin: 10px 50px;
+        }
+
+        .search-bars {
+            margin: 10px;
+        }
+
+        input[type="text"] {
+            width: 550px;
+            padding: 5px;
+            border: 1px solid lightgray;
+        }
+        
+        input[type="text"]:focus{
+            outline: none;
+            border: 1px solid blue;
+        }
+
+        input[type="submit"] {
+            position: absolute;
+            left: 59%;
+            background-color: #4084f2;
+            color: white;
+            border: 1px solid blue;
+            padding: 6px 10px;
+            border-radius: 2px;
+        }
+        
+        input[type="submit"]:hover{
+            cursor: pointer;
+            border-color: darkblue;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 10px 0px;
+            position: fixed;
+            bottom: 0%;
+            width: 100%;
+            font-size: 15px;
+            color: #70757a;
+        }
+
+        .bottom-menu {
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+
+        .bottom-menu span a {
+            padding-right: 15px;
+        }
+
+        .bottom-menu span a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="upperRightLinks">
+        <div id="links">
+            <span>
+                <a href="index.html">Google Search</a>
+            </span>
+        </div>
+    </div>
+
+    <div id="google-logo">
+        <img src="https://www.google.com.tr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+    </div>
+
+    <h3 style="color: #d93025; font-weight: 300;">Advanced Search</h3>
+    <div style="border-bottom: 1px solid #f2f2f2;">
+    </div>
+
+
+    <div class="main-container">
+        <p style="font-size: 16px;">Find pages with</p>
+        <form action="https://google.com/search" name="f">
+            <div class="search-area">
+                <div class="explanations">
+                    <p>all these words:</p>
+                    <p>this exact word or phrase:</p>
+                    <p>any of these words:</p>
+                    <p>none of these words:</p>
+                </div>
+
+                <div id="search-bar-container">
+                    <div class="search-bars">
+                        <input type="text" name="as_q">
+                    </div>
+                    <div class="search-bars">
+                        <input type="text" name="as_epq">
+                    </div>
+                    <div class="search-bars">
+                        <input type="text" name="as_oq">
+                    </div>
+                    <div class="search-bars">
+                        <input type="text" name="as_eq">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Advanced Search">
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+
+        <div class="bottom-menu" style="border-bottom: 1px solid #dadce0;">
+            Turkey
+        </div>
+
+        <div class="bottom-menu">
+            <span>
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
+            </span>
+            <span style="float: right;">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </span>
+        </div>
+
+    </footer>
+</body>
+
+</html>
